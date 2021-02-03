@@ -4,6 +4,7 @@
   --primary: #eeeeef;
   --secondary: #333333;
   --backgroundGradient: linear-gradient(90deg, rgba(241, 241, 241, 1) 0%, rgba(213, 213, 213, 1) 100%);
+  --backgroundGradientDark: linear-gradient(90deg, rgb(168, 158, 158) 0%, rgb(63, 60, 60) 100%);
   --fontSize: 1em;
   --fullWidth: 100%;
   --path: 'M0,0 C40,20 110,-20 150,-10';
@@ -22,20 +23,20 @@ html {
   color: var(--primary);
 }
 
-body {
+.card {
   display: grid;
   place-items: center;
   height: 100vh;
   overflow: hidden;
 }
 
-div {
+.card div {
   width: 500px;
   border-radius: 18px;
   color: black;
 }
 
-div section {
+.card div section {
   text-align: center;
   position: relative;
   padding: 20em 5em;
@@ -45,12 +46,11 @@ div section {
   transform-style: preserve-3d;
 }
 
-div:hover section {
-  /* transform: rotateY(0.5turn); */
+.card div:hover section {
   transform: rotateY(0.5turn);
 }
 
-div section article {
+.card div section article {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -61,117 +61,57 @@ div section article {
   transform-style: preserve-3d;
 }
 
-div section article:nth-of-type(1) {
+.card div section article:nth-of-type(1) {
   border-radius: 20px;
 }
 
-div section article:nth-of-type(2) {
+.card div section article:nth-of-type(2) {
   border-radius: 20px;
-
   transform: rotateY(0.5turn);
-  background: lightblue;
+  background: var(--backgroundGradientDark);
   transform-style: preserve-3d;
 }
 
-div section article img {
+.card div section article img {
   width: 100%;
   transform: translateZ(3em);
 }
 
-div section article p {
+.card div section article p {
   transform: translateZ(3em);
 }
 
-div section a {
-  text-decoration: none;
-  color: black;
+.card div section article:nth-child(1) h1,
+article:nth-child(1) h2,
+article:nth-child(1) p,
+article:nth-child(1) img {
+  transform: translateZ(3em);
 }
 
-div section article:nth-child(1) h1 {
+.card div section article:nth-child(1) h1 {
   font-size: 2.5em;
   margin: 1em 0;
-  transform: translateZ(3em);
 }
 
-div section article:nth-child(1) h2 {
+.card div section article:nth-child(1) h2 {
   font-size: 1.2rem;
   margin: 1em 0;
-  transform: translateZ(3em);
 }
 
-div section article:nth-child(2) img {
+.card div section article:nth-child(2) img {
   height: 90%;
   width: auto;
 }
-div section article p {
+.card div section article p {
   margin-top: 1em;
 }
 
-.image {
-  transition: transform 100ms;
-}
-.image:hover {
-  transform: perspective(1000px) scale(1) rotateX(var(--x)) rotateY(var(--y));
-}
-
-.image-element {
-  width: 50vw;
-  height: 50vh;
-  transition: 0.5s all ease;
-  transform: rotateX(60deg) scale(0.7);
-}
-.image-element:hover {
-  cursor: pointer;
-  transform: rotate(0deg) scale(1.3) translateY(150px);
-  transition: 0.5s all ease;
-  z-index: 400;
-}
-
-.image-element .laptop {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.image-element .tentacle {
-  offset-path: path(var(--path));
-  width: 30%;
-  position: absolute;
-  animation: distance 4000ms infinite ease-in-out;
-  animation-direction: alternate;
-  z-index: -1;
-}
-
-.image-element .tentacle:nth-child(2) {
-  transform: rotate(-40deg);
-  top: 15%;
-  left: -3%;
-}
-
-.image-element .tentacle:nth-child(3) {
-  animation-delay: 500ms;
-  transform: rotate(-70deg);
-  top: 53%;
-  left: 7%;
-}
-
-.image-element .tentacle:nth-child(4) {
-  animation-delay: -2000ms;
-  top: 12%;
-  left: 72%;
-  transform: scaleX(-1) rotate(-10deg);
-}
-
-.image-element .tentacle:nth-child(5) {
-  animation-delay: -1400ms;
-  transform: rotate(270deg);
-  top: 51%;
-  left: 55%;
-  transform: scaleX(-1) rotate(-45deg);
-}
-
-@keyframes distance {
-  100% {
-    offset-distance: 100%;
+@media screen and (max-width: 600px) {
+  .card div {
+    width: 90vw;
+  }
+  .card div img {
+    max-width: 100%;
+    height: auto;
   }
 }
