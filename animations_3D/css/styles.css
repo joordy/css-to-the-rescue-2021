@@ -7,7 +7,6 @@
   --backgroundGradientDark: linear-gradient(90deg, rgb(168, 158, 158) 0%, rgb(63, 60, 60) 100%);
   --fontSize: 1em;
   --fullWidth: 100%;
-  --path: 'M0,0 C40,20 110,-20 150,-10';
 }
 
 * {

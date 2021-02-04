@@ -2,6 +2,18 @@
 
 ## 🔦 Description
 
+CSS Zen Garden was an initiative 20 years ago to explore the possibilities of CSS: how can you use CSS to transform fixed HTML into a visual masterpiece at the time. The same task for you, but now. For this course, I create a restaurant menu with different contexts and restrictions
+
+### Context
+
+- prefers-color-scheme: Media feature that adapts the site based on the preference of the user settings.
+
+### Requirements
+
+- Apply SVG in shapes, masks and filters
+- Two colours
+- Level AAA (?)
+
 ---
 
 ## 🚀 Live link
@@ -22,24 +34,6 @@
 
 ```bash
   git clone https://github.com/joordy/css-to-the-rescue-2021.git
-```
-
-### Navigate to the repository and nstall the packages
-
-```bash
-  npm install
-```
-
-### Start local dev environment
-
-```bash
-  npm run dev
-```
-
-### Build export
-
-```bash
-  npm run build
 ```
 
 ---

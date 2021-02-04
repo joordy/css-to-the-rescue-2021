@@ -1,0 +1,13 @@
+:root {
+  --primary: #000;
+  --secondary: #eeeeef;
+  --white: #fff;
+  --fontsize: 1em;
+  --fullwidth: 100%;
+  --pink: hotpink;
+}
+
+h1 {
+  color: var(--pink);
+  font-size: 20px;
+}
