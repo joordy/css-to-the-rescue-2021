@@ -14,7 +14,7 @@ body > header {
 
 body header h1 {
   /* color: var(--softWhite); */
-  font-size: 7em;
+  font-size: clamp(3em, 15vw, 7em);
   font-weight: 900;
   font-style: italic;
 
