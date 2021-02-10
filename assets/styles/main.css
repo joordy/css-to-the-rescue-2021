@@ -1,13 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 @import 'header.css';
 @import 'footer.css';
 
+:root {
+  --darkBlue: #221f3e;
+  --softWhite: #fefdfd;
+}
+
 * {
-  font-family: 'Inter', sans-serif;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Merriweather', serif;
+  color: var(--softWhite);
 }
 
 body {
-  display: grid;
-  grid-template-columns: 2fr 3fr;
+  background-color: var(--darkBlue);
+  /* display: grid;
+  grid-template-columns: 2fr 3fr; */
 }
+
+body main {
+  /* height: 100vh; */
+  /* background-color: hotpink; */
+  text-align: center;
+}
+
+body main section {
+  width: 50vw;
+  margin: 0 auto;
+}
+
+body main section header {
+  margin: 6em 0;
+}
+body main section header h2 {
+  font-size: 4em;
+}
+body main section header p {
+  font-size: 2em;
+  font-weight: 100;
+}
+
+/* body main article {
+  overflow-y: scroll;
+  text-align: center;
+} */
