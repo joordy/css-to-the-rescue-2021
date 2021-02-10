@@ -13,9 +13,10 @@ body > header {
 }
 
 body header h1 {
-  color: var(--softWhite);
+  /* color: var(--softWhite); */
   font-size: 7em;
   font-weight: 900;
   font-style: italic;
-  filter: hue-rotate(180deg);
+
+  /* filter: hue-rotate(180deg); */
 }

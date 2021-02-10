@@ -4,9 +4,13 @@
 @import 'header.css';
 @import 'footer.css';
 
+/*************************************
+    Global styles and variables
+************************************/
+
 :root {
   --darkBlue: #221f3e;
-  --softWhite: #fefdfd;
+  --beige: #f2c399;
 }
 
 * {
@@ -15,16 +19,33 @@
   color: var(--softWhite);
 }
 
+h1,
+h2,
+h3,
+p,
+div,
+cite {
+  color: var(--beige);
+}
+
+p,
+div {
+  filter: brightness(200%);
+}
+
 body {
   background-color: var(--darkBlue);
   /* display: grid;
   grid-template-columns: 2fr 3fr; */
 }
 
+/**************************************
+*          Gerechten compleet         *
+***************************************/
+
 body main {
   /* height: 100vh; */
   /* background-color: hotpink; */
-  text-align: center;
 }
 
 body main section {
@@ -32,8 +53,13 @@ body main section {
   margin: 0 auto;
 }
 
+/*************************************
+          Gerechten Headers
+************************************/
+
 body main section header {
   margin: 6em 0;
+  text-align: center;
 }
 body main section header h2 {
   font-size: 4em;
@@ -43,7 +69,37 @@ body main section header p {
   font-weight: 100;
 }
 
-/* body main article {
-  overflow-y: scroll;
-  text-align: center;
-} */
+/*************************************
+          Gerechten blokken
+************************************/
+
+body main section article {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 1em 5em;
+  margin: 5em 0;
+  padding: 1em;
+  border: 1px solid var(--beige);
+}
+body main section article h3 {
+  grid-column: 1 / 2;
+}
+
+body main section article p {
+  grid-column: 1 / 2;
+}
+
+body main section article div {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+body main section article div:before {
+  content: '€';
+  display: block;
+  position: absolute;
+  left: 2em;
+}
