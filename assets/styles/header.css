@@ -1,13 +1,22 @@
-:root {
-  --primary: #000;
-  --secondary: #eeeeef;
-  --white: #fff;
-  --fontsize: 1em;
-  --fullwidth: 100%;
-  --pink: hotpink;
+/* :root {
+  --darkBlue: #221f3e;
+  --softWhite: #fefdfd;
+} */
+
+body > header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-h1 {
-  color: var(--pink);
-  font-size: 20px;
+body header h1 {
+  /* color: var(--softWhite); */
+  font-size: 7em;
+  font-weight: 900;
+  font-style: italic;
+
+  /* filter: hue-rotate(180deg); */
 }
