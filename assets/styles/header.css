@@ -10,8 +10,6 @@ body > header {
 
 body > header a {
   position: absolute;
-  /* top: 0; */
-  color: var(--beige);
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;

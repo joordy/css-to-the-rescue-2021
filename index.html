@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A template for a responsive restaurant menu</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
-    <!-- SUGGESTIONS FOR STYLING
-	https://duckduckgo.com/?q=beautiful+restaurant+menus&t=ffab&iax=images&ia=images
-	-->
   </head>
   <body>
     <header>
-      <a href="#more">Go to menu items</a>
+      <a href="#menu">Go to menu items</a>
 
       <h1>
         <span aria-hidden="true">Russ & Daughters</span>
@@ -21,7 +19,25 @@
       <p>Appetizing since 1924</p>
     </header>
 
-    <main id="more">
+    <main>
+      <input type="radio" name="menu" id="Noshes" checked />
+      <input type="radio" name="menu" id="Boards" />
+      <input type="radio" name="menu" id="Platters" />
+      <input type="radio" name="menu" id="Eggs" />
+      <input type="radio" name="menu" id="Soup" />
+      <input type="radio" name="menu" id="Salads" />
+      <input type="radio" name="menu" id="Sweet" />
+
+      <ul id="more">
+        <li><label for="Noshes">Noshes</label></li>
+        <li><label for="Boards">Boards</label></li>
+        <li><label for="Platters">Platters</label></li>
+        <li><label for="Eggs">Eggs</label></li>
+        <li><label for="Soup">Soup</label></li>
+        <li><label for="Salads">Salads</label></li>
+        <li><label for="Sweet">Sweet</label></li>
+      </ul>
+
       <section>
         <header>
           <h2>Noshes</h2>
@@ -304,6 +320,10 @@
         </article>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; Jordy Fronik — CSS To The Rescue — Minor Web Design & Development</p>
+    </footer>
 
     <!-- HTML taken and adjusted from https://codepen.io/julesforrest/pen/VqXvgQ -->
   </body>
