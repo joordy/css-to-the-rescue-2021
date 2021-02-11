@@ -10,15 +10,21 @@
 
 :root {
   --darkBlue: #221f3e;
-  --beige: #f2c399;
+  --beige: rgb(242, 195, 153);
+  --beigeBorder: 242, 195, 153;
 }
 
 * {
-  /* font-family: 'Inter', sans-serif; */
   font-family: 'Merriweather', serif;
   color: var(--softWhite);
+  margin: 0;
+  padding: 0;
+  box-sizing: b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2,
 h3,
@@ -28,6 +34,10 @@ cite {
   color: var(--beige);
 }
 
+h2::first-letter {
+  text-transform: uppercase;
+}
+
 p,
 div {
   filter: brightness(200%);
@@ -35,22 +45,14 @@ div {
 
 body {
   background-color: var(--darkBlue);
-  /* display: grid;
-  grid-template-columns: 2fr 3fr; */
 }
 
 /**************************************
 *          Gerechten compleet         *
 ***************************************/
 
-body main {
-  /* height: 100vh; */
-  /* background-color: hotpink; */
-}
-
 body main section {
-  width: 50vw;
-  margin: 0 auto;
+  text-align: center;
 }
 
 /*************************************
@@ -58,12 +60,15 @@ body main section {
 ************************************/
 
 body main section header {
-  margin: 6em 0;
+  margin: 5em 0;
   text-align: center;
 }
+
 body main section header h2 {
   font-size: 4em;
+  margin: 0;
 }
+
 body main section header p {
   font-size: 2em;
   font-weight: 100;
@@ -73,14 +78,52 @@ body main section header p {
           Gerechten blokken
 ************************************/
 
+body main section blockquote,
+body main section article,
+body main section h2 {
+  margin: 0 auto 5em auto;
+}
+
 body main section article {
   display: grid;
-  grid-template-columns: 5fr 1fr;
-  grid-gap: 1em 5em;
-  margin: 5em 0;
+  grid-template-columns: 4fr 1fr;
+  grid-gap: 1em 3em;
+  position: relative;
+  width: min(600px, 70%);
+  text-align: left;
   padding: 1em;
-  border: 1px solid var(--beige);
+  border: 1px solid rgba(var(--beigeBorder), 0.2);
 }
+
+body main section article::before,
+body main section article::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  box-sizing: border-box;
+  transition: all 0.6s ease;
+}
+body main section article::before {
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+body main section article::after {
+  top: 0;
+  right: 0;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+body main section article:hover::before,
+body main section article:hover::after {
+  border-color: var(--beige);
+  width: 100%;
+  height: 100%;
+}
+
 body main section article h3 {
   grid-column: 1 / 2;
 }
@@ -95,11 +138,4 @@ body main section article div {
   display: grid;
   place-items: center;
   position: relative;
-}
-
-body main section article div:before {
-  content: '€';
-  display: block;
-  position: absolute;
-  left: 2em;
 }

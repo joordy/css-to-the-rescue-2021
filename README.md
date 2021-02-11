@@ -28,6 +28,8 @@
 
 ## 🚀 Live link
 
+[www.cssttr.netlify.app](https://cssttr.netlify.app/)
+
 ---
 
 ## 📄 Patterns
@@ -45,10 +47,6 @@
 ```bash
   git clone https://github.com/joordy/css-to-the-rescue-2021.git
 ```
-
----
-
-## 📈 Datasets
 
 ---
 

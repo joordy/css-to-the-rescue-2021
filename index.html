@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>A template for a responsive restaurant menu</title>
@@ -11,11 +11,17 @@
   </head>
   <body>
     <header>
-      <h1><span>Russ</span> <span>&</span> <span>Daughters</span></h1>
+      <a href="#more">Go to menu items</a>
+
+      <h1>
+        <span aria-hidden="true">Russ & Daughters</span>
+        Russ & Daughters
+        <span aria-hidden="true">Russ & Daughters</span>
+      </h1>
       <p>Appetizing since 1924</p>
     </header>
 
-    <main>
+    <main id="more">
       <section>
         <header>
           <h2>Noshes</h2>
