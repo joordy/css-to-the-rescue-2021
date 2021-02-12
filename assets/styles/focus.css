@@ -1,0 +1,43 @@
+body > header a,
+body > footer a {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 1px;
+  transition: 0.2s;
+}
+
+body > header a {
+  top: -1em;
+}
+
+body > footer a {
+  bottom: -1em;
+}
+
+body > header a:focus,
+body > footer a:focus {
+  clip: auto;
+  clip-path: initial;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  width: auto;
+  padding: 1em 3em;
+  outline-color: var(--beige);
+}
+
+body > header a:focus {
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+body > footer a:focus {
+  bottom: 0;
+  right: 0;
+  position: relative;
+}
