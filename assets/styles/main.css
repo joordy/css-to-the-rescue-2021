@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 @import 'header.css';
-@import 'footer.css';
+@import 'focus.css';
 
 /*************************************
     Global styles and variables
@@ -62,13 +62,15 @@ body main section {
 ***************************************/
 
 body main section header {
-  margin: 5em 0;
   text-align: center;
+  margin: 2.5em 0 2em 0;
 }
 
-body main section header h2 {
+body main section header h2,
+body main section h2 {
   font-size: 4em;
-  margin: 0;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 body main section header p {
@@ -77,8 +79,7 @@ body main section header p {
 }
 
 body main section blockquote,
-body main section article,
-body main section h2 {
+body main section article {
   margin: 0 auto 5em auto;
 }
 
@@ -92,7 +93,7 @@ body main section article {
   grid-gap: 1em 3em;
   position: relative;
   width: min(600px, 70%);
-  height: min(100px, 200px);
+  height: auto;
   text-align: left;
   padding: 1em;
   background-color: var(--darkBlue);
@@ -156,11 +157,12 @@ ul {
   margin: 0 auto;
   margin-bottom: 3vh;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 ul li {
-  width: 100%;
+  margin: 0.5em 1em 0.5em 1em;
   list-style-type: none;
   text-align: center;
   cursor: pointer;
@@ -229,4 +231,19 @@ input[type='radio']:nth-child(6):checked ~ section:nth-of-type(6) {
 }
 input[type='radio']:nth-child(7):checked ~ section:nth-of-type(7) {
   display: block;
+}
+
+/**************************************
+*               Footer                *
+***************************************/
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 1rem;
+  margin: 5em 0 3em;
+  /* opacity: 0.2; */
+  filter: brightness(100%);
 }

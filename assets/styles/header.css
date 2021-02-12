@@ -8,32 +8,6 @@ body > header {
   position: relative;
 }
 
-body > header a {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 1px;
-  top: -1em;
-  transition: 0.2s;
-}
-
-body > header a:focus {
-  clip: auto;
-  clip-path: initial;
-  height: auto;
-  margin: 0;
-  overflow: visible;
-  position: absolute;
-  width: auto;
-  left: 0;
-  top: 0;
-  padding: 1em 3em;
-  outline-color: var(--beige);
-}
-
 body > header h1 {
   font-size: clamp(3rem, 15vw, 7rem);
   font-weight: 900;

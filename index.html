@@ -8,8 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css" />
   </head>
   <body>
-    <header>
-      <a href="#menu">Go to menu items</a>
+    <header id="top">
+      <a href="#menu" rel="prefetch">Go to menu items</a>
 
       <h1>
         <span aria-hidden="true">Russ & Daughters</span>
@@ -28,7 +28,7 @@
       <input type="radio" name="menu" id="Salads" />
       <input type="radio" name="menu" id="Sweet" />
 
-      <ul id="more">
+      <ul id="menu">
         <li><label for="Noshes">Noshes</label></li>
         <li><label for="Boards">Boards</label></li>
         <li><label for="Platters">Platters</label></li>
@@ -322,6 +322,7 @@
     </main>
 
     <footer>
+      <a href="#top">Go to top of page</a>
       <p>&copy; Jordy Fronik — CSS To The Rescue — Minor Web Design & Development</p>
     </footer>
 
