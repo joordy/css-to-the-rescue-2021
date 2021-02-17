@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 @import 'header.css';
+@import 'menu.css';
 @import 'focus.css';
 
 /*************************************
@@ -40,11 +41,6 @@ h2::first-letter {
   text-transform: uppercase;
 }
 
-p,
-div {
-  filter: brightness(200%);
-}
-
 body {
   background-color: var(--darkBlue);
 }
@@ -55,6 +51,41 @@ body {
 
 body main section {
   text-align: center;
+  min-height: 90vh;
+}
+
+/**************************************
+*         Gerechten borders           *
+***************************************/
+
+body main section article::before,
+body main section article::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  transition: all 0.6s ease;
+}
+body main section article::before {
+  left: 0;
+  bottom: 0;
+  /* border-radius: 20px; */
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+body main section article::after {
+  top: 0;
+  right: 0;
+  /* border-radius: 20px; */
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+body main section article:hover::before,
+body main section article:hover::after {
+  border-color: var(--beige);
+  width: 100%;
+  height: 100%;
 }
 
 /**************************************
@@ -78,8 +109,7 @@ body main section header p {
   font-weight: 100;
 }
 
-body main section blockquote,
-body main section article {
+body main section blockquote {
   margin: 0 auto 5em auto;
 }
 
@@ -87,152 +117,81 @@ body main section article {
 *         Gerechten content           *
 ***************************************/
 
-body main section article {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-gap: 1em 3em;
-  position: relative;
-  width: min(600px, 70%);
-  height: auto;
-  text-align: left;
-  padding: 1em;
-  background-color: var(--darkBlue);
-  border: 1px solid rgba(var(--beigeBorder), 0.2);
-}
-
-body main section article h3 {
-  grid-column: 1 / 2;
-}
-
-body main section article p {
-  grid-column: 1 / 2;
-}
-
-body main section article div {
-  grid-column: 2 / 3;
-  grid-row: 1 / 3;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-
-/**************************************
-*         Gerechten borders           *
-***************************************/
-
-body main section article::before,
-body main section article::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  transition: all 0.6s ease;
-}
-body main section article::before {
-  left: 0;
-  bottom: 0;
-  border-bottom: 2px solid transparent;
-  border-left: 2px solid transparent;
-}
-
-body main section article::after {
-  top: 0;
-  right: 0;
-  border-right: 2px solid transparent;
-  border-top: 2px solid transparent;
-}
-body main section article:hover::before,
-body main section article:hover::after {
-  border-color: var(--beige);
-  width: 100%;
-  height: 100%;
-}
-
-/**************************************
-*         Gerechten menu tabs         *
-***************************************/
-
-ul {
+body main section div {
   width: min(600px, 70%);
   margin: 0 auto;
-  margin-bottom: 3vh;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
 }
-
-ul li {
-  margin: 0.5em 1em 0.5em 1em;
-  list-style-type: none;
+body main section div article {
   text-align: center;
-  cursor: pointer;
-}
-
-ul li label {
-  color: var(--beige);
   position: relative;
-  filter: brightness(60%);
+  width: 100%;
+  height: auto;
+  padding: 2em 0em;
+  transition: transform 2s;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  margin: 1em 0;
 }
 
-input[type='radio'] {
-  display: none;
+body main section div:hover article {
+  transform: rotateY(0.5turn);
 }
 
-input[type='radio']:nth-child(1):checked ~ ul li:nth-child(1) label,
-input[type='radio']:nth-child(2):checked ~ ul li:nth-child(2) label,
-input[type='radio']:nth-child(3):checked ~ ul li:nth-child(3) label,
-input[type='radio']:nth-child(4):checked ~ ul li:nth-child(4) label,
-input[type='radio']:nth-child(5):checked ~ ul li:nth-child(5) label,
-input[type='radio']:nth-child(6):checked ~ ul li:nth-child(6) label,
-input[type='radio']:nth-child(7):checked ~ ul li:nth-child(7) label {
-  filter: brightness(145%);
-}
-
-input[type='radio']:nth-child(1):checked ~ ul li:nth-child(1) label:after,
-input[type='radio']:nth-child(2):checked ~ ul li:nth-child(2) label:after,
-input[type='radio']:nth-child(3):checked ~ ul li:nth-child(3) label:after,
-input[type='radio']:nth-child(4):checked ~ ul li:nth-child(4) label:after,
-input[type='radio']:nth-child(5):checked ~ ul li:nth-child(5) label:after,
-input[type='radio']:nth-child(6):checked ~ ul li:nth-child(6) label:after,
-input[type='radio']:nth-child(7):checked ~ ul li:nth-child(7) label:after {
-  content: '';
+body main section div article div {
   position: absolute;
-  z-index: -1;
-  top: -0.5em;
-  left: -0.75em;
-  width: calc(100% + 1.5em);
-  height: calc(100% + 1em);
-  border-radius: 4px;
-  background: var(--beige);
-  filter: brightness(40%);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-section {
-  display: none;
+body main section div article div:nth-child(1) {
+  border-radius: 20px;
 }
 
-input[type='radio']:nth-child(1):checked ~ section:nth-of-type(1) {
-  display: block;
+body main section div article div:nth-child(1) h3 {
+  filter: brightness(200%);
 }
-input[type='radio']:nth-child(2):checked ~ section:nth-of-type(2) {
-  display: block;
+body main section div article div:nth-child(2) {
+  border-radius: 20px;
+  transform: rotateY(0.5turn);
+  transform-style: preserve-3d;
 }
-input[type='radio']:nth-child(3):checked ~ section:nth-of-type(3) {
-  display: block;
+body main section div article div:nth-child(2) p {
+  margin: 0 0.5em;
+  filter: brightness(200);
 }
-input[type='radio']:nth-child(4):checked ~ section:nth-of-type(4) {
-  display: block;
+body main section div article div:nth-child(2) p:nth-child(2) {
+  position: relative;
+  margin-left: 1.5em;
 }
-input[type='radio']:nth-child(5):checked ~ section:nth-of-type(5) {
-  display: block;
-}
-input[type='radio']:nth-child(6):checked ~ section:nth-of-type(6) {
-  display: block;
-}
-input[type='radio']:nth-child(7):checked ~ section:nth-of-type(7) {
-  display: block;
+body main section div article div:nth-child(2) p:nth-child(2):before {
+  content: '€';
+  display: flex;
+  position: absolute;
+  left: -1em;
 }
 
+/**************************************
+*        Section BlockQuote           *
+***************************************/
+
+body main section blockquote p {
+  margin-bottom: 1em;
+}
+
+body main section blockquote p:nth-child(1) {
+  filter: hue-rotate(180deg);
+}
+
+body main section blockquote cite {
+  filter: hue-rotate(180deg);
+}
 /**************************************
 *               Footer                *
 ***************************************/
