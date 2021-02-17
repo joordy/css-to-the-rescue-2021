@@ -27,6 +27,7 @@ body > footer a:focus {
   overflow: visible;
   width: auto;
   padding: 1em 3em;
+  color: var(--beige);
   outline-color: var(--beige);
 }
 

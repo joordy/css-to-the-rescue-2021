@@ -49,9 +49,13 @@ body {
 *          Gerechten compleet         *
 ***************************************/
 
+body main {
+  height: 100vh;
+}
+
 body main section {
   text-align: center;
-  min-height: 65vh;
+  /* min-height: 65vh; */
 }
 
 /**************************************
@@ -94,14 +98,15 @@ body main section article:hover::after {
 
 body main section header {
   text-align: center;
-  margin: 2.5em 0 2em 0;
+  /* margin: 2.5em 0 2em 0; */
 }
 
 body main section header h2,
 body main section h2 {
   font-size: 4em;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
+  /* margin-top: 1.5em; */
+  /* margin-bottom: 0.5em; */
+  animation: 0.8s shake infinite;
 }
 
 body main section header p {
@@ -126,8 +131,9 @@ body main section div article {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 2em 0em;
-  transition: transform 2s;
+  padding: 3em 0em;
+  transition-delay: 1s;
+  transition: transform 3s;
   border-radius: 20px;
   transform-style: preserve-3d;
   margin: 1em 0;
@@ -202,10 +208,38 @@ footer {
 
 footer p {
   font-size: 1rem;
-  margin: 5em 0 3em;
+  padding: 3em 0 3em;
   /* opacity: 0.2; */
   filter: brightness(100%);
 }
+
+/**************************************
+*       Animation keyframes           *
+***************************************/
+
+@keyframes shake {
+  0% {
+    transform: skewx(-15deg);
+  }
+  5% {
+    transform: skewx(15deg);
+  }
+  10% {
+    transform: skewx(-15deg);
+  }
+  15% {
+    transform: skewx(15deg);
+  }
+  20% {
+    transform: skewx(0deg);
+  }
+  100% {
+    transform: skewx(0deg);
+  }
+}
+/**************************************
+*               Print                 *
+***************************************/
 
 @media print {
   @page {

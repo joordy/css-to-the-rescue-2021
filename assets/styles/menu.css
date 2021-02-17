@@ -11,7 +11,8 @@
 body main ul {
   width: min(600px, 70%);
   margin: 0 auto;
-  margin-bottom: 3vh;
+  padding: 3em 0;
+  /* margin-bottom: 3vh; */
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
