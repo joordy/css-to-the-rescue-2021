@@ -51,7 +51,7 @@ body {
 
 body main section {
   text-align: center;
-  min-height: 90vh;
+  min-height: 65vh;
 }
 
 /**************************************
@@ -205,4 +205,83 @@ footer p {
   margin: 5em 0 3em;
   /* opacity: 0.2; */
   filter: brightness(100%);
+}
+
+@media print {
+  @page {
+    padding: 3cm;
+    text-align: left;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 24pt;
+    line-height: 30pt;
+    margin: 0;
+  }
+
+  body {
+    font-size: 16pt;
+    line-height: 24pt;
+    background: none;
+  }
+
+  body h1 {
+    font-size: 50pt;
+    text-align: center;
+    page-break-after: always;
+  }
+
+  body main ul {
+    display: none;
+  }
+  body main section {
+    display: block;
+    page-break-before: always;
+  }
+  body main section div {
+    width: unset;
+    margin: unset;
+  }
+
+  body main section div article {
+    text-align: unset;
+    position: unset;
+    width: unset;
+    height: unset;
+    padding: unset;
+    transition: unset;
+    border-radius: unset;
+    transform-style: unset;
+    margin: unset;
+  }
+
+  body main section div article div {
+    position: unset;
+    top: unset;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    backface-visibility: unset;
+    transform-style: unset;
+    display: unset;
+    justify-content: unset;
+    align-items: unset;
+  }
+  body main section div article div p,
+  body main section div article div h3 {
+    font-size: 16pt;
+    line-height: 1;
+    color: black;
+    filter: brightness(unset);
+  }
+  body main section div article div:nth-child(2) {
+    border-radius: 20px;
+    transform: unset;
+    transform-style: unset;
+  }
 }
