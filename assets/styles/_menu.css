@@ -9,7 +9,7 @@
 ***************************************/
 
 body main ul {
-  width: min(600px, 70%);
+  width: min(600px, 90%);
   margin: 0 auto;
   padding: 3em 0;
   /* margin-bottom: 3vh; */
