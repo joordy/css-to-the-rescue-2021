@@ -1,3 +1,10 @@
+:root {
+  --darkBlue: #221f3e;
+  --darkBlueRGB: 34, 31, 62;
+  --beige: rgb(242, 195, 153);
+  --beigeBorder: 242, 195, 153;
+}
+
 /**************************************
 *       Animation keyframes           *
 ***************************************/
@@ -93,5 +100,136 @@
   100% {
     background-position: 0px 0;
     filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes blurAnim {
+  0% {
+    filter: blur(1px);
+    opacity: 0.8;
+  }
+  50% {
+    filter: blur(1px);
+    opacity: 1;
+  }
+  100% {
+    filter: blur(1px);
+    opacity: 0.8;
+  }
+}
+@keyframes flickAnim {
+  50% {
+    left: 2px;
+  }
+  51% {
+    left: 0;
+  }
+}
+@keyframes jumpAnim {
+  40% {
+    top: 3px;
+  }
+  41% {
+    top: 0;
+  }
+}
+@keyframes trackAnim {
+  40% {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: scale(1, 1);
+    transform: skew(0, 0);
+  }
+  41% {
+    opacity: 0.8;
+    top: 0px;
+    left: -100px;
+    transform: scale(1, 1.2);
+    transform: skew(50deg, 0);
+  }
+  42% {
+    top: 0px;
+    left: 100px;
+    transform: scale(1, 1.2);
+    transform: skew(-80deg, 0);
+  }
+  43% {
+    opacity: 1;
+    top: 0;
+    left: 0;
+    transform: scale(1, 1);
+    transform: skew(0, 0);
+  }
+}
+
+@keyframes blue-me {
+  28% {
+    background-color: rgb(var(--darkBlueRGB));
+  }
+  30% {
+    background-color: rgba(var(--darkBlueRGB), 0.55);
+  }
+  33% {
+    background-color: rgb(var(--darkBlueRGB));
+  }
+  34% {
+    background-color: rgba(var(--darkBlueRGB), 0.55);
+  }
+  35% {
+    background-color: rgb(var(--darkBlueRGB));
+  }
+}
+
+@keyframes appear {
+  0% {
+    filter: blur(5px);
+    opacity: 0.85;
+  }
+  50% {
+    filter: blur(3px);
+    opacity: 0.85;
+  }
+  100% {
+    filter: blur(4px);
+    opacity: 0.85;
+  }
+}
+
+@keyframes big-jump {
+  0% {
+    top: 0;
+  }
+  10% {
+    top: -70vh;
+  }
+  12% {
+    top: 0;
+  }
+  54% {
+    top: 0;
+  }
+  55% {
+    top: -40vh;
+  }
+  56% {
+    top: 0;
+  }
+  86% {
+    top: 0;
+  }
+  87% {
+    top: -30vh;
+  }
+  88% {
+    top: 0;
+  }
+}
+@keyframes flick {
+  50% {
+    left: 2px;
+  }
+  51% {
+    left: 0;
   }
 }
