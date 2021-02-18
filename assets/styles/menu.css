@@ -8,7 +8,7 @@
 *         Gerechten menu tabs         *
 ***************************************/
 
-body main ul {
+body main > ul {
   width: min(600px, 90%);
   margin: 0 auto;
   padding: 3em 0;
@@ -18,40 +18,34 @@ body main ul {
   flex-wrap: wrap;
 }
 
-body main ul li {
+body main > ul > li {
   margin: 0.5em 1em 0.5em 1em;
   list-style-type: none;
   text-align: center;
   cursor: pointer;
 }
 
-body main ul li label {
+body main > ul > li > label {
   color: var(--beige);
   position: relative;
   filter: brightness(60%);
 }
 
-body main input[type='radio'] {
+body main > input[type='radio'] {
   display: none;
 }
 
-input[type='radio']:nth-child(1):checked ~ ul li:nth-child(1) label,
-input[type='radio']:nth-child(2):checked ~ ul li:nth-child(2) label,
-input[type='radio']:nth-child(3):checked ~ ul li:nth-child(3) label,
-input[type='radio']:nth-child(4):checked ~ ul li:nth-child(4) label,
-input[type='radio']:nth-child(5):checked ~ ul li:nth-child(5) label,
-input[type='radio']:nth-child(6):checked ~ ul li:nth-child(6) label,
-input[type='radio']:nth-child(7):checked ~ ul li:nth-child(7) label {
+input[type='radio']:nth-child(1):checked ~ ul > li:nth-child(1) > label,
+input[type='radio']:nth-child(2):checked ~ ul > li:nth-child(2) > label,
+input[type='radio']:nth-child(3):checked ~ ul > li:nth-child(3) > label,
+input[type='radio']:nth-child(4):checked ~ ul > li:nth-child(4) > label,
+input[type='radio']:nth-child(5):checked ~ ul > li:nth-child(5) > label,
+input[type='radio']:nth-child(6):checked ~ ul > li:nth-child(6) > label,
+input[type='radio']:nth-child(7):checked ~ ul > li:nth-child(7) > label {
   filter: brightness(145%);
 }
 
-input[type='radio']:nth-child(1):checked ~ ul li:nth-child(1) label:after,
-input[type='radio']:nth-child(2):checked ~ ul li:nth-child(2) label:after,
-input[type='radio']:nth-child(3):checked ~ ul li:nth-child(3) label:after,
-input[type='radio']:nth-child(4):checked ~ ul li:nth-child(4) label:after,
-input[type='radio']:nth-child(5):checked ~ ul li:nth-child(5) label:after,
-input[type='radio']:nth-child(6):checked ~ ul li:nth-child(6) label:after,
-input[type='radio']:nth-child(7):checked ~ ul li:nth-child(7) label:after {
+main > ul > li > label:after {
   content: '';
   position: absolute;
   z-index: -1;
@@ -60,6 +54,15 @@ input[type='radio']:nth-child(7):checked ~ ul li:nth-child(7) label:after {
   width: calc(100% + 1.5em);
   height: calc(100% + 1em);
   border-radius: 4px;
+}
+
+input[type='radio']:nth-child(1):checked ~ ul > li:nth-child(1) > label:after,
+input[type='radio']:nth-child(2):checked ~ ul > li:nth-child(2) > label:after,
+input[type='radio']:nth-child(3):checked ~ ul > li:nth-child(3) > label:after,
+input[type='radio']:nth-child(4):checked ~ ul > li:nth-child(4) > label:after,
+input[type='radio']:nth-child(5):checked ~ ul > li:nth-child(5) > label:after,
+input[type='radio']:nth-child(6):checked ~ ul > li:nth-child(6) > label:after,
+input[type='radio']:nth-child(7):checked ~ ul > li:nth-child(7) > label:after {
   background: var(--beige);
   filter: brightness(40%);
 }
