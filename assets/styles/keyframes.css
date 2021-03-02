@@ -235,30 +235,6 @@
 }
 
 @keyframes rotateShit {
-  /* 0% {
-    transform: rotateY(0turn);
-  }
-  10% {
-    transform: rotateY(0.0625turn);
-  }
-  12.5% {
-    transform: rotateY(0.05turn);
-  }
-  50% {
-    transform: rotateY(0.25turn);
-  }
-  51% {
-    transform: rotateY(0.175turn);
-  }
-  87.5% {
-    transform: rotateY(0.425turn);
-  }
-  90% {
-    transform: rotateY(0.4turn);
-  }
-  100% {
-    transform: rotateY(0.5turn);
-  } */
   0% {
     transform: rotateY(0turn);
   }

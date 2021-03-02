@@ -7,7 +7,8 @@
 
 /* @import 'content.css'; */
 @import 'header.css';
-@import 'menu.css';
+@import 'main.css';
+@import 'footer.css';
 @import 'focus.css';
 @import 'keyframes.css';
 @import 'print.css';

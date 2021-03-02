@@ -1,0 +1,14 @@
+/**************************************
+*               Footer                *
+***************************************/
+
+footer {
+  text-align: center;
+  background-color: var(--darkBlue);
+}
+
+footer p {
+  font-size: 1rem;
+  padding: 3em 0 3em;
+  filter: brightness(100%);
+}
