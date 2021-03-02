@@ -4,15 +4,17 @@
   --beigeBorder: 242, 195, 153;
 }
 
-/* body main ul {
-  display: none !important;
-} */
+/**************************************
+*            Food overview            *
+***************************************/
 
 body main {
+  min-height: 100vh;
   background-color: var(--darkBlue);
   overflow: hidden;
   animation: blue-me 5ms infinite;
 }
+
 body main:after {
   box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.75);
   position: absolute;
@@ -23,20 +25,188 @@ body main:after {
   z-index: 2;
   content: '';
 }
-body main section header {
-  overflow: hidden;
-  /* margin: 2em; */
+
+body main section {
+  text-align: center;
+  min-height: 80vh;
 }
 
-:is(body main section) h2,
-header h2 {
+/**************************************
+*          Gerechten header           *
+***************************************/
+
+body main section {
+  --animationChain: blurAnim 30ms infinite, flickAnim 50ms infinite, jumpAnim 50ms infinite, trackAnim 5ms infinite;
+}
+body > main > ul > li > section header {
+  text-align: center;
+  overflow: hidden;
+}
+
+body > main > ul > li > section h2 {
+  font-size: 4em;
   position: relative;
   font-size: 3em;
   filter: blur(1px);
   text-shadow: 1px 3px green, -2px -3px red;
-  animation: blurAnim 30ms infinite, flickAnim 50ms infinite, jumpAnim 50ms infinite, trackAnim 5ms infinite;
+  animation: var(--animationChain);
 }
-.screen-bottom {
+
+body > main > ul > li > section header p {
+  margin-top: 1em;
+  font-size: 2em;
+  font-weight: 100;
+  animation: var(--animationChain);
+}
+
+/**************************************
+*        Section BlockQuote           *
+***************************************/
+
+body > main > ul > li > section blockquote {
+  margin: 2em auto;
+}
+
+body > main > ul > li > section blockquote p {
+  margin-bottom: 1em;
+}
+
+body > main > ul > li > section blockquote p:nth-child(1) {
+  filter: hue-rotate(86deg);
+}
+
+body > main > ul > li > section blockquote cite {
+  filter: hue-rotate(86deg);
+}
+/**************************************
+*           Gerechten cards           *
+***************************************/
+
+body > main > ul > li > section > div {
+  width: min(600px, 90%);
+  margin: 0 auto;
+}
+body > main > ul > li > section > div:nth-last-of-type(1) {
+  margin-bottom: 5em;
+}
+body > main > ul > li > section > div > article {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 3em 0em;
+  transition-delay: 1s;
+  transition: transform 3s;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  margin: 1em 0;
+}
+
+body > main > ul > li > section > div:hover > article {
+  animation: rotateShit 1s;
+}
+
+@keyframes rotateShit {
+  0% {
+    transform: rotateY(0turn);
+  }
+  40% {
+    transform: rotateY(0.2turn);
+  }
+  41% {
+    transform: rotateY(0.1875turn);
+  }
+  60% {
+    transform: rotateY(0.275turn);
+  }
+  61% {
+    transform: rotateY(0.225turn);
+  }
+  100% {
+    transform: rotateY(0.5turn);
+  }
+}
+
+body > main > ul > li > section > div > article > div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > main > ul > li > section > div > article > div:nth-child(1) {
+  border-radius: 20px;
+}
+
+body > main > ul > li > section div article div:nth-child(1) h3 {
+  filter: brightness(200%);
+}
+body > main > ul > li > section div article div:nth-child(2) {
+  border-radius: 20px;
+  transform: rotateY(0.5turn);
+  transform-style: preserve-3d;
+}
+body > main > ul > li > section div article div:nth-child(2) p {
+  margin: 0 0.5em;
+  filter: brightness(200);
+}
+body > main > ul > li > section div article div:nth-child(2) p:nth-child(2) {
+  position: relative;
+  margin-left: 1.5em;
+}
+body > main > ul > li > section div article div:nth-child(2) p:nth-child(2):before {
+  content: '€';
+  display: flex;
+  position: absolute;
+  left: -1em;
+}
+
+/**************************************
+*         Gerechten borders           *
+***************************************/
+
+:is(body > main > ul > li > section) article::before,
+article::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  transition: all 0.6s ease;
+}
+body > main > ul > li > section article::before {
+  left: 0;
+  bottom: 0;
+  /* border-radius: 20px; */
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+body > main > ul > li > section article::after {
+  top: 0;
+  right: 0;
+  /* border-radius: 20px; */
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+:is(body > main > ul > li > section) article:hover::before,
+article:hover::after {
+  border-color: var(--beige);
+  width: 100%;
+  height: 100%;
+}
+
+/**************************************
+*            Glitch bars              *
+***************************************/
+
+body main > div {
   position: relative;
   bottom: 0;
   width: 100%;
@@ -51,222 +221,32 @@ body main > div > ul {
 body main > div > ul > li:nth-of-type(1) {
   background: white;
   position: relative;
-  top: 0;
+  top: -19px;
   left: 0;
   height: 4px;
 }
 body main > div > ul > li:nth-of-type(2) {
   background: red;
   position: relative;
-  top: 0;
+  top: -19px;
   left: 0;
   height: 1px;
 }
 body main > div > ul > li:nth-of-type(3) {
   background: green;
   position: relative;
-  top: 0;
-  left: 0;
-  height: 1px;
-}
-/* 
-body main aside {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
-body main aside div {
-  width: 100%;
-  height: 3px;
-  position: relative;
-  animation: appear 1s infinite, flickAnim 1s infinite, big-jump 5ms infinite;
-}
-
-body main aside div span:nth-child(1) {
-  background: white;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 4px;
-}
-
-body main aside div span:nth-child(2) {
-  background: red;
-  position: relative;
-  top: 0;
+  top: -19px;
   left: 0;
   height: 1px;
 }
 
-body main aside div span:nth-child(3) {
-  background: green;
-  position: relative;
-  top: 0;
-  left: 0;
-  height: 1px;
-} */
-
-/**************************************
-*          Gerechten compleet         *
-***************************************/
-
-body main {
-  min-height: 100vh;
-}
-
-body main section {
-  text-align: center;
-  /* min-height: 65vh; */
-}
-
-/**************************************
-*         Gerechten borders           *
-***************************************/
-
-:is(body main section) article::before,
-article::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 0%;
-  transition: all 0.6s ease;
-}
-body main section article::before {
-  left: 0;
-  bottom: 0;
-  /* border-radius: 20px; */
-  border-bottom: 2px solid transparent;
-  border-left: 2px solid transparent;
-}
-
-body main section article::after {
-  top: 0;
-  right: 0;
-  /* border-radius: 20px; */
-  border-right: 2px solid transparent;
-  border-top: 2px solid transparent;
-}
-
-:is(body main section) article:hover::before,
-article:hover::after {
-  border-color: var(--beige);
-  width: 100%;
-  height: 100%;
-}
-
-/**************************************
-*          Gerechten header           *
-***************************************/
-
-body main section header {
-  text-align: center;
-  /* margin: 2.5em 0 2em 0; */
-}
-
-:is(body main section) header h2,
-h2 {
-  font-size: 4em;
-  /* margin-top: 1.5em; */
-  /* margin-bottom: 0.5em; */
-  /* animation: 0.8s shake infinite; */
-}
-
-body main section header p {
-  font-size: 2em;
-  font-weight: 100;
-}
-
-body main section blockquote {
-  margin: 0 auto 5em auto;
-}
-
-/**************************************
-*         Gerechten content           *
-***************************************/
-
-body main section div {
-  width: min(600px, 90%);
-  margin: 0 auto;
-}
-body main section div article {
-  text-align: center;
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 3em 0em;
-  transition-delay: 1s;
-  transition: transform 3s;
-  border-radius: 20px;
-  transform-style: preserve-3d;
-  margin: 1em 0;
-}
-
-body main section div:hover article {
-  transform: rotateY(0.5turn);
-}
-
-body main section div article div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-body main section div article div:nth-child(1) {
-  border-radius: 20px;
-}
-
-body main section div article div:nth-child(1) h3 {
-  filter: brightness(200%);
-}
-body main section div article div:nth-child(2) {
-  border-radius: 20px;
-  transform: rotateY(0.5turn);
-  transform-style: preserve-3d;
-}
-body main section div article div:nth-child(2) p {
-  margin: 0 0.5em;
-  filter: brightness(200);
-}
-body main section div article div:nth-child(2) p:nth-child(2) {
-  position: relative;
-  margin-left: 1.5em;
-}
-body main section div article div:nth-child(2) p:nth-child(2):before {
-  content: '€';
-  display: flex;
-  position: absolute;
-  left: -1em;
-}
-
-/**************************************
-*        Section BlockQuote           *
-***************************************/
-
-body main section blockquote p {
-  margin-bottom: 1em;
-}
-
-body main section blockquote p:nth-child(1) {
-  filter: hue-rotate(180deg);
-}
-
-body main section blockquote cite {
-  filter: hue-rotate(180deg);
-}
 /**************************************
 *               Footer                *
 ***************************************/
 
 footer {
   text-align: center;
+  background-color: var(--darkBlue);
 }
 
 footer p {

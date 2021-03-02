@@ -7,12 +7,17 @@
 ### Context
 
 - prefers-color-scheme: Media feature that adapts the site based on the preference of the user settings.
+- prefers-reduced-motion
+- print-stylesheet
+- input with checkboxes
+-
 
 ### Requirements
 
 - Apply SVG in shapes, masks and filters
-- Two colours
-- Level AAA (?)
+<!-- - Two colours -->
+- Responsive without media-queries
+- Level AAA (Lighthouse check 100%)
 
 ---
 

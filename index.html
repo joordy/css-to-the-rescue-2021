@@ -19,7 +19,7 @@
       <p>Appetizing since 1924</p>
     </header>
 
-    <main>
+    <main class="testmain">
       <input type="radio" name="menu" id="Noshes" checked />
       <input type="radio" name="menu" id="Boards" />
       <input type="radio" name="menu" id="Platters" />
@@ -28,456 +28,468 @@
       <input type="radio" name="menu" id="Salads" />
       <input type="radio" name="menu" id="Sweet" />
 
-      <ul id="menu">
-        <li><label for="Noshes">Noshes</label></li>
-        <li><label for="Boards">Boards</label></li>
-        <li><label for="Platters">Platters</label></li>
-        <li><label for="Eggs">Eggs</label></li>
-        <li><label for="Soup">Soup</label></li>
-        <li><label for="Salads">Salads</label></li>
-        <li><label for="Sweet">Sweet</label></li>
+      <div class="navigation" id="menu">
+        <label for="Noshes">Noshes</label>
+        <label for="Boards">Boards</label>
+        <label for="Platters">Platters</label>
+        <label for="Eggs">Eggs</label>
+        <label for="Soup">Soup</label>
+        <label for="Salads">Salads</label>
+        <label for="Sweet">Sweet</label>
+      </div>
+
+      <ul class="slides">
+        <li>
+          <section>
+            <header>
+              <h2>Noshes</h2>
+              <p>small dishes</p>
+            </header>
+
+            <div>
+              <article>
+                <div>
+                  <h3>Russ &amp; Daughters Knishes</h3>
+                </div>
+                <div>
+                  <p>Potato, carmelized onion, mustard</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>Hot Smoke/Cold Smoke</h3>
+                </div>
+                <div>
+                  <p>Kippered baked Salmon &amp; Scottish smoked salmon spread, waffle-cut potato chips</p>
+                  <p>13</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>Potato latkes</h3>
+                </div>
+                <div>
+                  <p>Salmon roe and creme fraiche</p>
+                  <p>13</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>Kasha Varnishkas</h3>
+                </div>
+                <div>
+                  <p>buckwheat, caramelized onion, bowtie egg noodles</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>Chopped liver</h3>
+                </div>
+                <div>
+                  <p>Matzo, pickled red onion</p>
+                  <p>9</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>Super heebster</h3>
+                </div>
+                <div>
+                  <p>
+                    whitefish &amp; baked salmon salad, wasabi-infused fish roe, horseradish dill cream cheese, bagel
+                    toast
+                  </p>
+                  <p>10</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>Pastrami Russ</h3>
+                </div>
+                <div>
+                  <p>pastrami-cured salmon, muenster cheese, sauerkraut, mustard, pickle, pretzel roll</p>
+                  <p>12</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>sours</h3>
+                </div>
+                <div>
+                  <p>pickled vegetables, pickles from the barrel</p>
+                  <p>7</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
+
+        <li>
+          <section>
+            <header>
+              <h2>boards</h2>
+              <p>open-faced sandwiches</p>
+            </header>
+
+            <div>
+              <article>
+                <div>
+                  <h3>the classic</h3>
+                </div>
+                <div>
+                  <p>gaspe nova smoked salmon, cream cheese, bagel-bialy, tomato, onion, capers</p>
+                  <p>16</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>mensch</h3>
+                </div>
+                <div>
+                  <p>sturgeon, butter, bagel/bialy, tomato, onion, capers</p>
+                  <p>22</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>shtetl</h3></div>
+                <div>
+                  <p>smoked sable, goat cream cheese, bagel-bialy, tomato, onion, capers</p>
+                  <p>18</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div>
+                  <h3>yum kippered</h3>
+                </div>
+                <div>
+                  <p>kippered (baked) salmon, cream cheese, bagel/bialy, tomato, onion, capers</p>
+                  <p>16</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <header>
+              <h2>platters</h2>
+              <p>To be shared</p>
+            </header>
+
+            <div>
+              <article>
+                <div>
+                  <h3>smoked fish</h3>
+                </div>
+                <div>
+                  <p>
+                    <em>Serves 3 - 4 people</em> with cream cheese, onion, tomato, capers &amp; new potato salad and
+                    Russ &amp; daughters bread basket
+                  </p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>the hattie</h3></div>
+                <div>
+                  <p>smoked whitefish, kippered (baked) salmon, gaspe nova smoked salmon, sable</p>
+                  <p>80</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>the ida</h3></div>
+                <div>
+                  <p>scottish smoked salmon, gaspe nova smoked salmon, pastrami-cured salmon, gravlox</p>
+                  <p>70</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>the anne</h3></div>
+                <div>
+                  <p>
+                    western nova smoked salmon, private stock sturgeon, sable, smoked brook trout, wild alaskan salmon
+                    roe
+                  </p>
+                  <p>90</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <header>
+              <h2>Eggs</h2>
+              <p>served all the time</p>
+            </header>
+
+            <blockquote>
+              <p>"Ess gezinter hayt."</p>
+              <p>Eat in good health.</p>
+              <cite>— Yiddish idiom</cite>
+            </blockquote>
+
+            <div>
+              <article>
+                <div><h3>Lox, eggs &amp; onions</h3></div>
+                <div>
+                  <p>with toasted shissel rye</p>
+                  <p>15</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>sturgeon, eggs &amp; onion</h3></div>
+                <div>
+                  <p>with toasted pumpernickel</p>
+                  <p>19</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>bella's matzo brei</h3></div>
+                <div>
+                  <p>matzo, egg, applesauce, sour cream</p>
+                  <p>12</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>lower sunny side</h3></div>
+                <div>
+                  <p>sunny side up eggs, gaspe nova smoked salmon, potato latkes</p>
+                  <p>16</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>eggs benny</h3></div>
+                <div>
+                  <p>poached eggs, scottish smoked salmon, sautéed spinach, hollandaise, challah</p>
+                  <p>18</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>farm egg omelette</h3></div>
+                <div>
+                  <p>gaspe nova smoked salmon, cream cheese</p>
+                  <p>15</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>soft scrambled eggs &amp; caviar</h3></div>
+                <div>
+                  <p>custard-like egg, caviar with challah</p>
+                  <p>180</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h2>Soup</h2>
+
+            <div>
+              <article>
+                <div><h3>Matzo Ball</h3></div>
+                <div>
+                  <p>chicken, vegetables, matzo ball</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>Mushroom Barley</h3></div>
+                <div>
+                  <p>mushrooms, barley with shissel rye bread</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>Borscht</h3></div>
+                <div>
+                  <p>served chilled: beets, sour cream, dill with pumpernickel</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>Smoked Whitefish Chowder</h3></div>
+                <div>
+                  <p>dill, esplette pepper, matzo</p>
+                  <p>10</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h2>salads</h2>
+
+            <div>
+              <article>
+                <div><h3>Mixed Green</h3></div>
+                <div>
+                  <p>greens, fennel, dill, capers, citrus dressing</p>
+                  <p>9</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>Chopped Salad</h3></div>
+                <div>
+                  <p>smoked whitefish, avocado, beets, egg, apple, mixed greens, matzo, buttermilk dressing</p>
+                  <p>14</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>Smoked Trout& Potato</h3></div>
+                <div>
+                  <p>smoked trout, watercress, caper mustard dressing</p>
+                  <p>14</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
+        <li>
+          <section>
+            <h2>sweet</h2>
+
+            <blockquote>
+              <p>"A moltsayt on a tsimes iz via a mayse on a moshl."</p>
+              <p>A meal without a sweet dish is like a story without a moral.</p>
+              <cite>— Yiddish idiom</cite>
+            </blockquote>
+
+            <div>
+              <article>
+                <div><h3>blintzes</h3></div>
+                <div>
+                  <p>fruit compote, sour cream</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>babka french toast</h3></div>
+                <div>
+                  <p>chocolate babka, sour cream, berries</p>
+                  <p>10</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>noodle kugel</h3></div>
+                <div>
+                  <p>farmer cheese, raisins, egg noodles</p>
+                  <p>7</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>challah bread pudding</h3></div>
+                <div>
+                  <p>dried apricots, caramel sauce</p>
+                  <p>9</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>halvah ice cream</h3></div>
+                <div>
+                  <p>halvah, sesame, salted caramel</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>grandpa's grapefruit</h3></div>
+                <div>
+                  <p>grapefruit, white germ, maple syrup</p>
+                  <p>6</p>
+                </div>
+              </article>
+            </div>
+            <div>
+              <article>
+                <div><h3>baked farmer cheese</h3></div>
+                <div>
+                  <p>blueberry, walnut &amp; honey with pumpernickel</p>
+                  <p>7</p>
+                </div>
+              </article>
+            </div>
+
+            <div>
+              <article>
+                <div><h3>cookie plate</h3></div>
+                <div>
+                  <p>Russ &amp; daughters cookies &amp; sweets</p>
+                  <p>8</p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </li>
       </ul>
+    </main>
 
-      <section>
-        <header>
-          <h2>Noshes</h2>
-          <p>small dishes</p>
-        </header>
-
-        <div>
-          <article>
-            <div>
-              <h3>Russ &amp; Daughters Knishes</h3>
-            </div>
-            <div>
-              <p>Potato, carmelized onion, mustard</p>
-              <p>8</p>
-            </div>
-            <!-- price -->
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>Hot Smoke/Cold Smoke</h3>
-            </div>
-            <div>
-              <p>Kippered baked Salmon &amp; Scottish smoked salmon spread, waffle-cut potato chips</p>
-              <p>13</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>Potato latkes</h3>
-            </div>
-            <div>
-              <p>Salmon roe and creme fraiche</p>
-              <p>13</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>Kasha Varnishkas</h3>
-            </div>
-            <div>
-              <p>buckwheat, caramelized onion, bowtie egg noodles</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>Chopped liver</h3>
-            </div>
-            <div>
-              <p>Matzo, pickled red onion</p>
-              <p>9</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>Super heebster</h3>
-            </div>
-            <div>
-              <p>
-                whitefish &amp; baked salmon salad, wasabi-infused fish roe, horseradish dill cream cheese, bagel toast
-              </p>
-              <p>10</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>Pastrami Russ</h3>
-            </div>
-            <div>
-              <p>pastrami-cured salmon, muenster cheese, sauerkraut, mustard, pickle, pretzel roll</p>
-              <p>12</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>sours</h3>
-            </div>
-            <div>
-              <p>pickled vegetables, pickles from the barrel</p>
-              <p>7</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h2>boards</h2>
-          <p>open-faced sandwiches</p>
-        </header>
-
-        <div>
-          <article>
-            <div>
-              <h3>the classic</h3>
-            </div>
-            <div>
-              <p>gaspe nova smoked salmon, cream cheese, bagel-bialy, tomato, onion, capers</p>
-              <p>16</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>mensch</h3>
-            </div>
-            <div>
-              <p>sturgeon, butter, bagel/bialy, tomato, onion, capers</p>
-              <p>22</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>shtetl</h3></div>
-            <div>
-              <p>smoked sable, goat cream cheese, bagel-bialy, tomato, onion, capers</p>
-              <p>18</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div>
-              <h3>yum kippered</h3>
-            </div>
-            <div>
-              <p>kippered (baked) salmon, cream cheese, bagel/bialy, tomato, onion, capers</p>
-              <p>16</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h2>platters</h2>
-          <p>To be shared</p>
-        </header>
-
-        <div>
-          <article>
-            <div>
-              <h3>smoked fish</h3>
-            </div>
-            <div>
-              <p>
-                <em>Serves 3 - 4 people</em> with cream cheese, onion, tomato, capers &amp; new potato salad and Russ
-                &amp; daughters bread basket
-              </p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>the hattie</h3></div>
-            <div>
-              <p>smoked whitefish, kippered (baked) salmon, gaspe nova smoked salmon, sable</p>
-              <p>80</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>the ida</h3></div>
-            <div>
-              <p>scottish smoked salmon, gaspe nova smoked salmon, pastrami-cured salmon, gravlox</p>
-              <p>70</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>the anne</h3></div>
-            <div>
-              <p>
-                western nova smoked salmon, private stock sturgeon, sable, smoked brook trout, wild alaskan salmon roe
-              </p>
-              <p>90</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <header>
-          <h2>Eggs</h2>
-          <p>served all the time</p>
-        </header>
-
-        <blockquote>
-          <p>"Ess gezinter hayt."</p>
-          <p>Eat in good health.</p>
-          <cite>— Yiddish idiom</cite>
-        </blockquote>
-
-        <div>
-          <article>
-            <div><h3>Lox, eggs &amp; onions</h3></div>
-            <div>
-              <p>with toasted shissel rye</p>
-              <p>15</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>sturgeon, eggs &amp; onion</h3></div>
-            <div>
-              <p>with toasted pumpernickel</p>
-              <p>19</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>bella's matzo brei</h3></div>
-            <div>
-              <p>matzo, egg, applesauce, sour cream</p>
-              <p>12</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>lower sunny side</h3></div>
-            <div>
-              <p>sunny side up eggs, gaspe nova smoked salmon, potato latkes</p>
-              <p>16</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>eggs benny</h3></div>
-            <div>
-              <p>poached eggs, scottish smoked salmon, sautéed spinach, hollandaise, challah</p>
-              <p>18</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>farm egg omelette</h3></div>
-            <div>
-              <p>gaspe nova smoked salmon, cream cheese</p>
-              <p>15</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>soft scrambled eggs &amp; caviar</h3></div>
-            <div>
-              <p>custard-like egg, caviar with challah</p>
-              <p>180</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>Soup</h2>
-
-        <div>
-          <article>
-            <div><h3>Matzo Ball</h3></div>
-            <div>
-              <p>chicken, vegetables, matzo ball</p>
-              <p>8</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>Mushroom Barley</h3></div>
-            <div>
-              <p>mushrooms, barley with shissel rye bread</p>
-              <p>8</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>Borscht</h3></div>
-            <div>
-              <p>served chilled: beets, sour cream, dill with pumpernickel</p>
-              <p>8</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>Smoked Whitefish Chowder</h3></div>
-            <div>
-              <p>dill, esplette pepper, matzo</p>
-              <p>10</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>salads</h2>
-
-        <div>
-          <article>
-            <div><h3>Mixed Green</h3></div>
-            <div>
-              <p>greens, fennel, dill, capers, citrus dressing</p>
-              <p>9</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>Chopped Salad</h3></div>
-            <div>
-              <p>smoked whitefish, avocado, beets, egg, apple, mixed greens, matzo, buttermilk dressing</p>
-              <p>14</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>Smoked Trout& Potato</h3></div>
-            <div>
-              <p>smoked trout, watercress, caper mustard dressing</p>
-              <p>14</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section>
-        <h2>sweet</h2>
-
-        <blockquote>
-          <p>"A moltsayt on a tsimes iz via a mayse on a moshl."</p>
-          <p>A meal without a sweet dish is like a story without a moral.</p>
-          <cite>— Yiddish idiom</cite>
-        </blockquote>
-
-        <div>
-          <article>
-            <div><h3>blintzes</h3></div>
-            <div>
-              <p>fruit compote, sour cream</p>
-              <p>8</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>babka french toast</h3></div>
-            <div>
-              <p>chocolate babka, sour cream, berries</p>
-              <p>10</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>noodle kugel</h3></div>
-            <div>
-              <p>farmer cheese, raisins, egg noodles</p>
-              <p>7</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>challah bread pudding</h3></div>
-            <div>
-              <p>dried apricots, caramel sauce</p>
-              <p>9</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>halvah ice cream</h3></div>
-            <div>
-              <p>halvah, sesame, salted caramel</p>
-              <p>8</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>grandpa's grapefruit</h3></div>
-            <div>
-              <p>grapefruit, white germ, maple syrup</p>
-              <p>6</p>
-            </div>
-          </article>
-        </div>
-        <div>
-          <article>
-            <div><h3>baked farmer cheese</h3></div>
-            <div>
-              <p>blueberry, walnut &amp; honey with pumpernickel</p>
-              <p>7</p>
-            </div>
-          </article>
-        </div>
-
-        <div>
-          <article>
-            <div><h3>cookie plate</h3></div>
-            <div>
-              <p>Russ &amp; daughters cookies &amp; sweets</p>
-              <p>8</p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <div class="screen-bottom">
+    <!-- <div class="screen-bottom">
         <ul class="line">
           <li class="red"></li>
           <li class="white"></li>
           <li class="green"></span>
         </ul>
-      </div>
-    </main>
+      </div> -->
 
     <footer>
       <a href="#top">Go to top of page</a>
