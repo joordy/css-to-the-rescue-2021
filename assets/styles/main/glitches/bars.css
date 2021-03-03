@@ -1,0 +1,46 @@
+:root {
+  --darkBlue: rgb(34, 31, 62);
+  --darkBlueRgbCode: 34, 31, 62;
+  --beige: rgb(242, 195, 153);
+  --beigeRgbCode: 242, 195, 153;
+}
+/**************************************
+*            Glitch bars              *
+***************************************/
+
+body main > div:last-child {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+body main > div:last-child > ul {
+  width: 100%;
+  height: 3px;
+  position: relative;
+  animation: appear 1s infinite, flick 1s infinite, big-jump 1s infinite;
+}
+
+body main > div:last-child > ul > li:nth-of-type(1) {
+  background: white;
+  position: relative;
+  top: -19px;
+  left: 0;
+  height: 4px;
+}
+
+body main > div:last-child > ul > li:nth-of-type(2) {
+  background: red;
+  position: relative;
+  top: -19px;
+  left: 0;
+  height: 1px;
+}
+
+body main > div:last-child > ul > li:nth-of-type(3) {
+  background: green;
+  position: relative;
+  top: -19px;
+  left: 0;
+  height: 1px;
+}

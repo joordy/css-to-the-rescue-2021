@@ -1,0 +1,159 @@
+:root {
+  --darkBlue: rgb(34, 31, 62);
+  --darkBlueRgbCode: 34, 31, 62;
+  --beige: rgb(242, 195, 153);
+  --beigeRgbCode: 242, 195, 153;
+}
+
+/****************************************************************************
+*                                 Food menu item                            *
+*****************************************************************************/
+
+/**************************************
+*        Section BlockQuote           *
+***************************************/
+
+body > main > ul > li > section header {
+  text-align: center;
+  overflow: hidden;
+}
+
+body > main > ul > li > section h2 {
+  font-size: 4em;
+  position: relative;
+  font-size: 3em;
+  filter: blur(1px);
+  text-shadow: 1px 3px green, -2px -3px red;
+  animation: var(--animationChain);
+}
+
+body > main > ul > li > section header p {
+  margin-top: 1em;
+  font-size: 2em;
+  font-weight: 100;
+  animation: var(--animationChain);
+}
+
+/**************************************
+*        Section BlockQuote           *
+***************************************/
+
+body > main > ul > li > section blockquote {
+  margin: 2em auto;
+}
+
+body > main > ul > li > section blockquote p {
+  margin-bottom: 1em;
+}
+
+body > main > ul > li > section blockquote p:nth-child(1) {
+  filter: hue-rotate(86deg);
+}
+
+body > main > ul > li > section blockquote cite {
+  filter: hue-rotate(86deg);
+}
+
+/**************************************
+*           Gerechten cards           *
+***************************************/
+
+body > main > ul > li > section > div {
+  width: min(600px, 90%);
+  margin: 0 auto;
+}
+
+body > main > ul > li > section > div:nth-last-of-type(1) {
+  margin-bottom: 5em;
+}
+
+body > main > ul > li > section > div article {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: calc(3em - 2px) 0em;
+  transition-delay: 1s;
+  transition: transform 3s;
+  transform-style: preserve-3d;
+  margin: 1em 0;
+}
+
+body > main > ul > li > section > div:hover > article {
+  animation: rotateShit 1s;
+  animation-fill-mode: forwards;
+}
+
+body > main > ul > li > section > div > article div {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  right: 2px;
+  backface-visibility: hidden;
+  background: var(--darkBlue);
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > main > ul > li > section div article div:nth-child(1) h3 {
+  filter: brightness(200%);
+  animation: var(--animationChain);
+}
+
+body > main > ul > li > section div article div:nth-child(2) {
+  transform: rotateY(0.5turn);
+  transform-style: preserve-3d;
+}
+
+body > main > ul > li > section div article div:nth-child(2) p {
+  margin: 0 0.5em;
+  filter: brightness(200);
+}
+
+body > main > ul > li > section div article div:nth-child(2) p:nth-child(2) {
+  position: relative;
+  margin-left: 1.5em;
+}
+
+body > main > ul > li > section div article div:nth-child(2) p:nth-child(2):before {
+  content: '€';
+  display: flex;
+  position: absolute;
+  left: -1em;
+}
+/**************************************
+*         Gerechten borders           *
+***************************************/
+
+:is(body > main > ul > li > section) article::before,
+article::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  transition: all 0.6s ease;
+}
+
+body > main > ul > li > section article::before {
+  left: 0;
+  bottom: 0;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+}
+
+body > main > ul > li > section article::after {
+  top: 0;
+  right: 0;
+  border-right: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+:is(body > main > ul > li > section) article:hover::before,
+article:hover::after {
+  border-color: var(--beige);
+  width: 100%;
+  height: 100%;
+}

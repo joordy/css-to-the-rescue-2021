@@ -5,13 +5,23 @@
         Import all elements
 ************************************/
 
-/* @import 'content.css'; */
-@import 'header.css';
-@import 'main.css';
-@import 'footer.css';
-@import 'focus.css';
-@import 'keyframes.css';
-@import 'print.css';
+@import 'header/header.css';
+
+@import 'main/main.css';
+@import 'main/navigation/navi.css';
+@import 'main/items/item.css';
+@import 'main/list/list.css';
+@import 'main/glitches/bars.css';
+
+@import 'footer/footer.css';
+
+/* @import 'navMenu/navi.css'; */
+/* @import 'menuItem/list.css'; */
+
+@import 'media/motion.css';
+@import 'media/print.css';
+@import 'states/focus.css';
+@import 'animations/keyframes.css';
 
 /*************************************
     Global styles and variables
