@@ -1,0 +1,77 @@
+:root {
+  --darkBlue: rgb(34, 31, 62);
+  --darkBlueRgbCode: 34, 31, 62;
+  --beige: rgb(242, 195, 153);
+  --beigeRgbCode: 242, 195, 153;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--darkBlue);
+  }
+
+  body main {
+    background-color: var(--darkBlue);
+  }
+
+  body > footer {
+    background-color: var(--darkBlue);
+  }
+
+  body > footer > :is(a, p) {
+    color: var(--beige);
+  }
+
+  /********** Gerechten navi ***********/
+
+  body > main > div > label {
+    color: var(--beige);
+  }
+
+  body > main > div > label:after {
+    color: var(--darkBlue);
+  }
+
+  body > main > input[type='radio']:nth-child(1):checked ~ div > label:nth-child(1),
+  body > main > input[type='radio']:nth-child(2):checked ~ div > label:nth-child(2),
+  body > main > input[type='radio']:nth-child(3):checked ~ div > label:nth-child(3),
+  body > main > input[type='radio']:nth-child(4):checked ~ div > label:nth-child(4),
+  body > main > input[type='radio']:nth-child(5):checked ~ div > label:nth-child(5),
+  body > main > input[type='radio']:nth-child(6):checked ~ div > label:nth-child(6),
+  body > main > input[type='radio']:nth-child(7):checked ~ div > label:nth-child(7) {
+    color: var(--darkBlue);
+  }
+
+  body > main > input[type='radio']:nth-child(1):checked ~ div > label:nth-child(1):after,
+  body > main > input[type='radio']:nth-child(2):checked ~ div > label:nth-child(2):after,
+  body > main > input[type='radio']:nth-child(3):checked ~ div > label:nth-child(3):after,
+  body > main > input[type='radio']:nth-child(4):checked ~ div > label:nth-child(4):after,
+  body > main > input[type='radio']:nth-child(5):checked ~ div > label:nth-child(5):after,
+  body > main > input[type='radio']:nth-child(6):checked ~ div > label:nth-child(6):after,
+  body > main > input[type='radio']:nth-child(7):checked ~ div > label:nth-child(7):after {
+    background: var(--beige);
+  }
+
+  /********** Gerechten cards ***********/
+
+  body > main > ul > li :is(h2, h3, p) {
+    color: var(--beige);
+  }
+
+  body > main > ul > li > section > div > article div {
+    background: var(--darkBlue);
+  }
+
+  body > main > ul > li > section blockquote cite {
+    color: var(--beige);
+  }
+
+  /********* Gerechten borders **********/
+
+  :is(body > main > ul > li > section) article:hover::before,
+  article:hover::after {
+    border-color: var(--beige);
+    width: 100%;
+    height: 100%;
+  }
+}

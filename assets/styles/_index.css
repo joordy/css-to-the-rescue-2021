@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
 /*************************************
         Import all elements
 ************************************/
 
-/* @import 'content.css'; */
-@import 'header.css';
-@import 'menu.css';
-@import 'focus.css';
-@import 'keyframes.css';
-@import 'print.css';
+@import 'header/header.css';
+
+@import 'main/main.css';
+@import 'main/navigation/navi.css';
+@import 'main/items/item.css';
+@import 'main/list/list.css';
+@import 'main/glitches/bars.css';
+
+@import 'footer/footer.css';
+
+@import 'media/motion.css';
+@import 'media/print.css';
+@import 'media/light_dark.css';
+
+@import 'states/focus.css';
+
+@import 'animations/keyframes.css';
 
 /*************************************
     Global styles and variables
@@ -23,11 +34,9 @@
   --beigeRgbCode: 242, 195, 153;
 }
 
-*,
-::before,
-::after {
+:is(*, ::before, ::after) {
   font-family: 'Merriweather', serif;
-  color: var(--beige);
+  color: var(--darkBlue);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -37,13 +46,8 @@ html {
   scroll-behavior: smooth;
 }
 
-h1,
-h2,
-h3,
-p,
-div,
-cite {
-  color: var(--beige);
+:is(h1, h2, h3, p, div, cite) {
+  color: var(--darkBlue);
 }
 
 h2::first-letter {
@@ -51,5 +55,5 @@ h2::first-letter {
 }
 
 body {
-  background-color: var(--darkBlue);
+  background-color: var(--beige);
 }

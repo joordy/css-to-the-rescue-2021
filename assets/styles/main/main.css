@@ -1,0 +1,18 @@
+:root {
+  --darkBlue: rgb(34, 31, 62);
+  --darkBlueRgbCode: 34, 31, 62;
+  --beige: rgb(242, 195, 153);
+  --beigeRgbCode: 242, 195, 153;
+}
+
+/**************************************
+*                 main                *
+***************************************/
+
+body > main {
+  text-align: center;
+  padding: 4em 0;
+  min-height: 80vh;
+  position: relative;
+  overflow: hidden;
+}
