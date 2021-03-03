@@ -10,6 +10,12 @@
 
 ### 🗓️ **Week 1 - Planning**
 
+<!-- Welke opdracht ga je doen en voor welke opties kies je qua uitwerking.
+Met welke CSS-technieken ga je als eerste aan de slag.
+Waar liggen je (grootste) uitdagingen.
+Neem schets(en) van je ontwerp op.
+Maak wellicht ook al een eerste breakdown-schets. -->
+
 #### **Opdracht**
 
 Als opdracht voor CSS To The Rescue heb ik gekozen voor **CSS Zen Garden - 2021 version**. Deze opdracht bestaat uit het ontwerpen van een menu-kaart met verschillende gerechten.
@@ -35,13 +41,14 @@ Als eerste versie heb ik een schets opgezet waarbij er alle menu-items over elka
 
 ![v0.1](https://user-images.githubusercontent.com/48051912/109819840-c0d10700-7c34-11eb-9ad9-5e9c51a1bba8.png)
 
-<!-- Welke opdracht ga je doen en voor welke opties kies je qua uitwerking.
-Met welke CSS-technieken ga je als eerste aan de slag.
-Waar liggen je (grootste) uitdagingen.
-Neem schets(en) van je ontwerp op.
-Maak wellicht ook al een eerste breakdown-schets. -->
-
 ### 🗓️ **Week 2 & 3 - Voortgang**
+
+<!-- Laat je voortgang zien ('praatje met plaatjes').
+Wat ging er soepel en wat was lastig.
+Welke experimenten heb je gedaan die die 'mislukt' zijn.
+Heb je nieuwe inzichten hoe je de kracht CSS kunt benutten (of juist niet).
+Neem wijzigingen aan je 1e plan op.
+Waar liggen je (nieuwe) uitdagingen voor komende week. -->
 
 #### **Koerswijziging**
 
@@ -55,16 +62,13 @@ Als thema van mijn pagina heb ik gekozen om glitch effecten toe te voegen. Voora
 
 Om een hoog contrast te hebben (minimaal 7:1), heb ik er voor gekozen om twee uitspringende kleuren te gebruiken. Uiteindelijk zijn het de kleuren donkerblauw (`rgb(34, 31, 62)`) & beige (`rgb(242, 195, 153)`) geworden, welke een score van 9.77 haalt volgens de website [www.contrast-ratio.com](https://contrast-ratio.com/#rgb%28242%2C%20195%2C%20153%29-on-rgb%2834%2C%2031%2C%2062%29), wat op basis van de WCAG 2.0 (Leven AAA) wordt gemeten.
 
+#### **Experimenteren**
+
+Voor het eerst heb ik gebruik gemaakt van variabelen die ik in de CSS code nest, met het gevolg dat ik variabelen kan hergebruiken, en benoemen. Ook heb ik voor het eerst in CSS met input-navigatie gewerkt. Ik heb gebruik gemaakt van `input[type='radio'], en dat ging me vrij goed af.
+
 #### **Versie 1.0 & 2.0**
 
 ![v1+v2](https://user-images.githubusercontent.com/48051912/109824293-fb3ca300-7c38-11eb-8caa-9dc6a23bc94c.png)
-
-<!-- Laat je voortgang zien ('praatje met plaatjes').
-Wat ging er soepel en wat was lastig.
-Welke experimenten heb je gedaan die die 'mislukt' zijn.
-Heb je nieuwe inzichten hoe je de kracht CSS kunt benutten (of juist niet).
-Neem wijzigingen aan je 1e plan op.
-Waar liggen je (nieuwe) uitdagingen voor komende week. -->
 
 ### 🗓️ **Week 4 - Afronding**
 
@@ -125,9 +129,13 @@ Een van mijn **requirements** was om goed te scoren op level AAA van de WCAG. Di
 
 ![Accessability score](https://user-images.githubusercontent.com/48051912/109824991-ab121080-7c39-11eb-9e9f-a0aea1af85f3.png)
 
-#### **Final result**
+#### **Versie 3**
 
 ![Final result](https://user-images.githubusercontent.com/48051912/109820950-c4b15900-7c35-11eb-99c5-8872c37fe512.png)
+
+#### **Eindproduct**
+
+![Final result](https://user-images.githubusercontent.com/48051912/109827284-e0b7f900-7c3b-11eb-9d75-eec3c48bfb71.gif)
 
 ---
 
@@ -152,64 +160,13 @@ De website is hier te bijken: [cssttr.netlify.app](https://cssttr.netlify.app/)
 - W3docs. (2020, July 14). How to Create Glitch Effect With CSS. Retrieved February 17, 2021, from https://www.w3docs.com/snippets/css/how-to-create-glitch-effect-with-css.html
 - MDN. (2021, February 19). animation-fill-mode - CSS: Cascading Style Sheets | MDN. Retrieved March 02, 2021, from https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
 - Perez, J. A. (2019, September 2). Carousel - CSS only. CodePen. Retrieved February 12, 2021, from https://codepen.io/JonAnderDev/pen/wBopXo
+- Palladino, D. (2015, December 3). VHS CRT Paused. CodePen. Retrieved February 19, 2021, from https://codepen.io/derekjp/pen/jWNazq
 - Graham, G. (2019, January 4). :is(). CSS-Tricks. Retrieved March 03, 2021, from https://css-tricks.com/almanac/selectors/i/is/
-<!-- - - Source (n.d.) Writer, Source. Retrieved February 01, 2020, from weblink -->
 
 ---
 
 ## 💽 **License**
 
----
-
-<!-- https://codepen.io/ClementRoche/details/YQeQYJ  -->
-<!-- # CSS To The Rescue
-
-## 🔦 Description
-
-**CSS Zen Garden** was an initiative 20 years ago to explore the possibilities of CSS: how can you use CSS to transform fixed HTML into a visual masterpiece at the time. The same task for you, but now. For this course, I create a restaurant menu with different contexts and restrictions
-
-### Context
-
-
-
-### Requirements
-
-- Apply SVG in shapes, masks and filters
-- Responsive without media-queries
-- Level AAA (Lighthouse check 100%)
-
----
-
-## ✍🏼 Sketches
-
-![version_01 of idea's](https://user-images.githubusercontent.com/48051912/107026502-1556a300-67ab-11eb-8177-57ecc3afa11b.png)
-
----
-
-## 📝 Breakdown
-
----
-
-## 🚀 Live link
-
-[www.cssttr.netlify.app](https://cssttr.netlify.app/)
-
----
-
-## 📄 Proces
-
----
-
-## Features
-
----
-
-## 🔑 Installation
-
-### Clone the repository
-
-```bash
-  git clone https://github.com/joordy/css-to-the-rescue-2021.git
-```
+This is a repository which is licensed as [MIT](https://github.com/joordy/css-to-the-rescue-2021/blob/master/LICENSE). Developed by Jordy Fronik ©️ 2021.
 
 ---
