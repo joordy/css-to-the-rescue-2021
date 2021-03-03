@@ -10,4 +10,8 @@
     transition-delay: 0s !important;
     transition-duration: 0s !important;
   }
+
+  body > main > div:last-child {
+    visibility: hidden;
+  }
 }

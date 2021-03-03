@@ -12,35 +12,40 @@ body main > div:last-child {
   position: relative;
   bottom: 0;
   width: 100%;
+  --animationChain: appear 1s infinite, flick 1s infinite, big-jump 1s infinite;
+  --pos: relative;
+  --height: 4px;
+  --top: -19px;
+  --left: 0;
 }
 
 body main > div:last-child > ul {
   width: 100%;
   height: 3px;
-  position: relative;
-  animation: appear 1s infinite, flick 1s infinite, big-jump 1s infinite;
+  position: var(--pos);
+  animation: var(--animationChain);
 }
 
 body main > div:last-child > ul > li:nth-of-type(1) {
   background: white;
-  position: relative;
-  top: -19px;
-  left: 0;
-  height: 4px;
+  position: var(--pos);
+  top: var(--top);
+  left: var(--left);
+  height: var(--height);
 }
 
 body main > div:last-child > ul > li:nth-of-type(2) {
   background: red;
-  position: relative;
-  top: -19px;
-  left: 0;
-  height: 1px;
+  position: var(--pos);
+  top: var(--top);
+  left: var(--left);
+  height: var(--height);
 }
 
 body main > div:last-child > ul > li:nth-of-type(3) {
   background: green;
-  position: relative;
-  top: -19px;
-  left: 0;
-  height: 1px;
+  position: var(--pos);
+  top: var(--top);
+  left: var(--left);
+  height: var(--height);
 }

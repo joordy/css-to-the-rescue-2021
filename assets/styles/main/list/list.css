@@ -18,43 +18,53 @@ body > main > ul {
   list-style: none;
   position: relative;
   transition: 0.4s;
+  --fullWidth: calc(100% / 7);
+  --floating: left;
+  --pos: relative;
 }
 
 body > main > ul > li {
-  width: calc(100% / 7);
-  position: relative;
-  float: left;
+  width: var(--fullWidth);
+  position: var(--pos);
+  float: var(--floating);
   --animationChain: blurAnim 30ms infinite, flickAnim 50ms infinite, jumpAnim 50ms infinite, trackAnim 5ms infinite;
 }
 
 body > main input[type='radio']:checked ~ ul {
   transform: translateX(var(--transform));
+  --one: calc((-100% / 7) * 0);
+  --two: calc((-100% / 7) * 1);
+  --three: calc((-100% / 7) * 2);
+  --four: calc((-100% / 7) * 3);
+  --five: calc((-100% / 7) * 4);
+  --six: calc((-100% / 7) * 5);
+  --seven: calc((-100% / 7) * 6);
 }
 
 body > main input[type='radio']:nth-child(1):checked ~ ul {
-  --transform: calc((-100% / 7) * 0);
+  --transform: var(--one);
 }
 
 body > main input[type='radio']:nth-child(2):checked ~ ul {
-  --transform: calc((-100% / 7) * 1);
+  --transform: var(--two);
 }
 
 body > main input[type='radio']:nth-child(3):checked ~ ul {
-  --transform: calc((-100% / 7) * 2);
+  --transform: var(--three);
 }
 
 body > main input[type='radio']:nth-child(4):checked ~ ul {
-  --transform: calc((-100% / 7) * 3);
+  --transform: var(--four);
 }
 
 body > main input[type='radio']:nth-child(5):checked ~ ul {
-  --transform: calc((-100% / 7) * 4);
+  --transform: var(--five);
 }
 
 body > main input[type='radio']:nth-child(6):checked ~ ul {
-  --transform: calc((-100% / 7) * 5);
+  --transform: var(--six);
 }
 
 body > main input[type='radio']:nth-child(7):checked ~ ul {
-  --transform: calc((-100% / 7) * 6);
+  --transform: var(--seven);
 }

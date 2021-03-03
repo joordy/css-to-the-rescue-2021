@@ -15,32 +15,31 @@ body > main > input {
 
 body > main > div {
   text-align: center;
-  /* display: block;
-  list-style: none;
-  text-align: center;
-  top: 2em;
-  position: absolute;
-  width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 3em; */
+  --padding: 0.25em 1.25em;
+  --zindexBehind: -1;
+  --border4px: 4px;
+  --top: -0.5em;
+  --left: -0.75em;
+  --width: calc(100% + 1.5em);
+  --height: calc(100% + 1em);
 }
 
 body > main > div > label {
   background: transparent;
-  padding: 0.25em 1.25em;
+  padding: var(--padding);
   line-height: 40px;
 }
 
 body > main > div > label:after {
   content: '';
   position: absolute;
-  z-index: -1;
-  top: -0.5em;
-  left: -0.75em;
-  width: calc(100% + 1.5em);
-  height: calc(100% + 1em);
-  border-radius: 4px;
+  z-index: var(--zindexBehind);
+  top: var(--top);
+  left: var(--left);
+  width: var(--width);
+  height: var(--height);
+  border-radius: var(--border4px);
+  color: var(--beige);
 }
 
 body > main > input[type='radio']:nth-child(1):checked ~ div > label:nth-child(1),
@@ -50,7 +49,8 @@ body > main > input[type='radio']:nth-child(4):checked ~ div > label:nth-child(4
 body > main > input[type='radio']:nth-child(5):checked ~ div > label:nth-child(5),
 body > main > input[type='radio']:nth-child(6):checked ~ div > label:nth-child(6),
 body > main > input[type='radio']:nth-child(7):checked ~ div > label:nth-child(7) {
-  filter: brightness(145%);
+  color: var(--beige);
+  filter: brightness(100%);
 }
 
 body > main > input[type='radio']:nth-child(1):checked ~ div > label:nth-child(1):after,
@@ -60,6 +60,6 @@ body > main > input[type='radio']:nth-child(4):checked ~ div > label:nth-child(4
 body > main > input[type='radio']:nth-child(5):checked ~ div > label:nth-child(5):after,
 body > main > input[type='radio']:nth-child(6):checked ~ div > label:nth-child(6):after,
 body > main > input[type='radio']:nth-child(7):checked ~ div > label:nth-child(7):after {
-  background: var(--beige);
-  filter: brightness(40%);
+  background: var(--darkBlue);
+  filter: brightness(100%);
 }

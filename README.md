@@ -7,13 +7,12 @@
 ### Context
 
 - Prefers-color-scheme: Media query waarbij er gebruik kan worden gemaakt van dark & lightmode, op basis van de OS instellingen.
-- Prefers-reduced-motion:
-- Print-stylesheet
-- Input met radio-buttons
+- Prefers-reduced-motion: Media-query voor degene die een gereduceerde website willen hebben, oftewel zonder animaties.
+- Input met radio-buttons: Content laten zien op basis van input via radio buttons.
 
 ### Requirements
 
-- Responsive without media-queries
+- Responsive without media-queries (min-width & max-width)
 - Level AAA (Lighthouse check 100%)
 
 ---
@@ -72,6 +71,7 @@ Waar wil je meer mee gaan doen. -->
 - W3docs. (2020, July 14). How to Create Glitch Effect With CSS. https://www.w3docs.com/snippets/css/how-to-create-glitch-effect-with-css.html
 - MDN. (2021, February 19). animation-fill-mode - CSS: Cascading Style Sheets | MDN. https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode
 - Perez, J. A. (2019, September 2). Carousel - CSS only. CodePen. Retrieved February 12, 2021, from https://codepen.io/JonAnderDev/pen/wBopXo
+- Graham, G. (2019, January 4). :is(). CSS-Tricks. https://css-tricks.com/almanac/selectors/i/is/
 - - Source (n.d.) Writer, Source. Retrieved February 01, 2020, from weblink
 
 ---

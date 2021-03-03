@@ -26,9 +26,9 @@ body > header:before {
   animation: glitchBack 0.5s infinite;
 }
 
-body > header:hover:before {
+body > header :is(h1, h1 > span) {
+  color: var(--beige);
 }
-
 body > header h1 {
   font-size: clamp(3rem, 15vw, 7rem);
   font-weight: 900;
@@ -60,6 +60,7 @@ body > header h1 span:last-child {
 
 body > header > p {
   position: relative;
+  color: #fff;
 }
 body > header > p:after {
   content: '';
@@ -70,6 +71,5 @@ body > header > p:after {
   transform: translateX(-50%) translateY(-50%);
   width: 140%;
   height: 140%;
-  background-color: hotpink;
-  filter: hue-rotate(39deg);
+  background-color: var(--darkBlue);
 }

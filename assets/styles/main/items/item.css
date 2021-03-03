@@ -47,11 +47,12 @@ body > main > ul > li > section blockquote p {
 }
 
 body > main > ul > li > section blockquote p:nth-child(1) {
-  filter: hue-rotate(86deg);
+  font-weight: 900;
 }
 
 body > main > ul > li > section blockquote cite {
-  filter: hue-rotate(86deg);
+  font-weight: 100;
+  color: var(--darkBlue);
 }
 
 /**************************************
@@ -91,7 +92,7 @@ body > main > ul > li > section > div > article div {
   left: 2px;
   right: 2px;
   backface-visibility: hidden;
-  background: var(--darkBlue);
+  background: var(--beige);
   transform-style: preserve-3d;
   display: flex;
   justify-content: center;
@@ -99,7 +100,7 @@ body > main > ul > li > section > div > article div {
 }
 
 body > main > ul > li > section div article div:nth-child(1) h3 {
-  filter: brightness(200%);
+  /* filter: brightness(200%); */
   animation: var(--animationChain);
 }
 
@@ -110,7 +111,7 @@ body > main > ul > li > section div article div:nth-child(2) {
 
 body > main > ul > li > section div article div:nth-child(2) p {
   margin: 0 0.5em;
-  filter: brightness(200);
+  /* filter: brightness(200); */
 }
 
 body > main > ul > li > section div article div:nth-child(2) p:nth-child(2) {
@@ -153,7 +154,7 @@ body > main > ul > li > section article::after {
 
 :is(body > main > ul > li > section) article:hover::before,
 article:hover::after {
-  border-color: var(--beige);
+  border-color: var(--darkBlue);
   width: 100%;
   height: 100%;
 }

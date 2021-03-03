@@ -3,6 +3,9 @@
   --darkBlueRgbCode: 34, 31, 62;
   --beige: rgb(242, 195, 153);
   --beigeRgbCode: 242, 195, 153;
+  --red: rgba(255, 0, 0, 0.75);
+  --green: rgba(0, 255, 0, 0.75);
+  --blue: rgba(0, 0, 255, 0.75);
 }
 
 /**************************************
@@ -11,33 +14,25 @@
 
 @keyframes glitchyHeader {
   0% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0 0 var(--red), -0.05em -0.025em 0 var(--green), -0.025em 0.05em 0 var(--green);
   }
   14% {
-    text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.05em 0 0 var(--red), -0.05em -0.025em 0 var(--green), -0.025em 0.05em 0 var(--green);
   }
   15% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em -0.025em 0 var(--red), 0.025em 0.025em 0 var(--green), -0.05em -0.05em 0 var(--green);
   }
-
   49% {
-    text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.05em -0.025em 0 var(--red), 0.025em 0.025em 0 var(--green), -0.05em -0.05em 0 var(--green);
   }
   50% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75),
-      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.025em 0.05em 0 var(--red), 0.05em 0 0 var(--green), 0 -0.05em 0 var(--green);
   }
   99% {
-    text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75),
-      0 -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: 0.025em 0.05em 0 var(--red), 0.05em 0 0 var(--green), 0 -0.05em 0 var(--green);
   }
   100% {
-    text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
-      -0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+    text-shadow: -0.025em 0 0 var(--red), -0.025em -0.025em 0 var(--green), -0.025em -0.05em 0 var(--blue);
   }
 }
 
