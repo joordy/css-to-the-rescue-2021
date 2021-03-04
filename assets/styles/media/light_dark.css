@@ -18,7 +18,7 @@
     background-color: var(--darkBlue);
   }
 
-  body > footer > :is(a, p) {
+  body > footer > :is(p, a) {
     color: var(--beige);
   }
 
@@ -75,9 +75,12 @@
     height: 100%;
   }
 
-  body > header > a,
-  body > footer > a {
+  *:focus {
+    outline-color: var(--beige);
+  }
+  body > header > a:focus,
+  body > footer > a:focus {
     color: var(--beige);
-    background-color: var(--beige);
+    background-color: var(--darkBlue);
   }
 }
