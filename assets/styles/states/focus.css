@@ -14,14 +14,15 @@ body > footer a {
   white-space: nowrap;
   width: 1px;
   transition: 0.2s;
+  background-color: var(--darkBlue);
 }
 
 body > header a {
   top: -1em;
 }
 
-body > main label:focus {
-  color: var(--beige);
+body > main > div > label:focus {
+  color: var(--darkBlue);
   outline-color: var(--beige);
 }
 
@@ -55,5 +56,37 @@ body > footer a:focus {
 }
 
 *:focus {
-  outline-color: hotpink;
+  outline-color: var(--darkBlue);
+}
+
+body > main > ul > li > section div article div:nth-of-type(2):focus-within {
+  animation-fill-mode: forwards;
+  animation: rotateShit 1s;
+}
+
+body > main > ul > li > section div article div:nth-of-type(2):focus-within ~ div:nth-of-type(1) {
+  animation: rotateShit 1s;
+}
+/* 
+body
+  > main
+  > ul
+  > li
+  > section
+  div
+  article
+  div:nth-child(2):focus-within
+  ~ body
+  > main
+  > ul
+  > li
+  > section
+  div
+  article
+  div:nth-child(1) {
+  display: none;
+} */
+
+body > main > ul > li > section div article div:nth-of-type(1):focus {
+  /* display: none; */
 }
