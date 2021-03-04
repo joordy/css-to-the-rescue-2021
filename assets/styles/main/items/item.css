@@ -74,7 +74,7 @@ body > main > ul > li > section > div article {
   width: 100%;
   height: auto;
   padding: calc(3em - 2px) 0em;
-  transition-delay: 1s;
+  /* transition-delay: 1s; */
   transition: transform 3s;
   transform-style: preserve-3d;
   margin: 1em 0;

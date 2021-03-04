@@ -60,8 +60,8 @@ body > footer a:focus {
 }
 
 body > main > ul > li > section div:focus article {
-  animation-fill-mode: forwards;
   animation: rotateShit 1s;
+  animation-fill-mode: forwards;
 }
 
 :is(body > main > ul > li > section)div:focus article::before,
