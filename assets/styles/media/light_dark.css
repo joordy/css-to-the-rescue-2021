@@ -75,12 +75,9 @@
     height: 100%;
   }
 
-  body > header a,
-  body > footer a {
+  body > header > a,
+  body > footer > a {
     color: var(--beige);
     background-color: var(--beige);
-  }
-  *:focus {
-    outline-color: var(--beige);
   }
 }
