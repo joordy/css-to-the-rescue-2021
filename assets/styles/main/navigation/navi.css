@@ -15,9 +15,7 @@ body > main > input {
 
 body > main > div {
   width: 100%;
-  /* position: sticky;
-  left: 50%;
-  transform: translateX(-50%); */
+  padding: 0 2em;
   text-align: center;
   --padding: 0.25em 1.25em;
   --zindexBehind: -1;

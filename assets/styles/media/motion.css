@@ -14,4 +14,8 @@
   body > main > div:last-child {
     visibility: hidden;
   }
+
+  body > main > ul > li > section div:focus article {
+    transform: rotateY(180deg);
+  }
 }
